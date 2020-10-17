@@ -1,4 +1,22 @@
-/* Hover CSS */
+/*-------------================ page scrollbar start =================------*/
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #151580;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #4fadec;
+}
+
+/*---------------=========== page scrollbar end ===============-------*/
+
+
+/*----------------======== Hover CSS ==============-----------*/
 /* Grow Shadow */
 .hvr-grow-shadow {
   display: inline-block;
