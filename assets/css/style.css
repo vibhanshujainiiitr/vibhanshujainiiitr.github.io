@@ -1,9 +1,23 @@
-/**
-* Template Name: Folio - v2.0.1
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/* Hover CSS */
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  margin-bottom: 5%;
+  margin-top:5%;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 /*--------------------------------------------------------------
 # General
@@ -441,6 +455,7 @@ nav ul li a {
 
 #journal .journal-block .journal-info {
   position: relative;
+
 }
 
 .journal-block .journal-info img {
@@ -696,8 +711,8 @@ blockquote {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #footer .socials-media {
@@ -727,7 +742,8 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #00025c;
+  font-size: 115%;
   transition: all 0.5s ease-in-out 0s;
 }
 
