@@ -52,6 +52,12 @@
 
 <body>
     <style>
+        .button-div {
+            padding: 1%;
+            width: 40%;
+            margin: auto;
+        }
+
         a.button4 {
             display: inline-block;
             padding: 0.3em 1.2em;
@@ -83,21 +89,53 @@
             }
         }
 
-        .merch-cards{
+
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+        }
+
+        .btn-grad {
+            display: inline-block;
+            padding: 2%;
+            margin: 5%;
+            margin-bottom: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+
+        .merch-cards {
             margin: 5%;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
             text-align: center;
         }
-        .merch-cards:hover{
+
+        .merch-cards:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
         }
-        .merch-cards img{
+
+        .merch-cards img {
             width: 100%;
         }
-        .merch-cards h3{
-            padding: 5%;
-        }
 
+        .merch-cards h3 {
+            padding-top: 20px;
+        }
     </style>
 
     <div class="container">
@@ -109,7 +147,9 @@
                         Price:
                         <strike>300</strike>&nbsp;250 Rs.
                     </h3>
-                    <a class="button4" href="form-link">Buy Now !</a>
+                    <div class="button-div">
+                        <a class="btn-grad" href="form-link">Buy Now !</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
@@ -119,7 +159,9 @@
                         Price:
                         <strike>300</strike>&nbsp;250 Rs.
                     </h3>
-                    <a class="button4" href="form-link">Buy Now !</a>
+                    <div class="button-div">
+                        <a class="btn-grad" href="form-link">Buy Now !</a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
