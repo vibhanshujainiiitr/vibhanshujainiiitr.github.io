@@ -1,20 +1,41 @@
+.project-cards {
+  margin: 7%;
+  background: rgba(26, 26, 26, 0.6);
+  box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /* box-shadow: 1px 2px 2px 3px rgb(255, 255, 255); */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.project-cards:hover {
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca,
+    0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 /*-------------================ page scrollbar start =================------*/
 ::-webkit-scrollbar {
-	width: 7px;
+  width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #151580;
+  background: #151580;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #4fadec;
+  background: #4fadec;
 }
 
 /*---------------=========== page scrollbar end ===============-------*/
-
 
 /*----------------======== Hover CSS ==============-----------*/
 /* Grow Shadow */
@@ -29,9 +50,11 @@
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
   margin-bottom: 5%;
-  margin-top:5%;
+  margin-top: 5%;
 }
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -43,7 +66,7 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -56,7 +79,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -81,7 +109,8 @@ a:hover {
   transition: all 0.5s ease-in-out 0s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #b8a07e;
   text-decoration: underline;
 }
@@ -129,7 +158,8 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
 
@@ -212,7 +242,7 @@ nav {
 nav ul li {
   float: left;
   margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   margin-left: 40px;
 }
@@ -223,7 +253,7 @@ nav ul li a {
   display: block;
   font-size: 14px;
   color: #999999;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
@@ -321,7 +351,7 @@ nav ul li a {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 28px;
   text-align: left;
 }
@@ -421,14 +451,15 @@ nav ul li a {
   color: #999999;
   line-height: 16px;
   cursor: pointer;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active {
+#portfolio .portfolio-list .nav li:hover,
+#portfolio .portfolio-list .nav li.filter-active {
   color: #b8a07e;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -452,7 +483,8 @@ nav ul li a {
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
-#journal, #journal-blog {
+#journal,
+#journal-blog {
   height: auto;
   width: 100%;
   background: #f7f7f7;
@@ -473,7 +505,6 @@ nav ul li a {
 
 #journal .journal-block .journal-info {
   position: relative;
-
 }
 
 .journal-block .journal-info img {
@@ -481,7 +512,7 @@ nav ul li a {
 }
 
 .journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
+  padding: 25px 25px 25px 25px;
   position: relative;
 }
 
@@ -491,7 +522,7 @@ nav ul li a {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: #fdfdfd;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -524,7 +555,8 @@ nav ul li a {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   margin-bottom: 5px;
 }
